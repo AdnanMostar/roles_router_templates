@@ -1,0 +1,9 @@
+router vrrp
+ interface {{item.interface}}
+  address-family ipv4
+   vrrp {item.vrrp_value}}
+    name {item.master_or_backup}
+    priority {item.priority_value}
+    address {item.vrrp_virt_address}
+    commit
+    end
