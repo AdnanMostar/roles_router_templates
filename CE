@@ -5,7 +5,7 @@ ip cef
 interface Loopback {{item.int_loopback_number}}
  ip address {{item.int_loopback_ip_address_mask}}
 !
-interface {{item.int_to_pe}}
+interface {{item.int_to_pe_name_number}}
  ip address {{item.int_to_pe_ip_address_mask}}
  duplex auto
  speed auto
