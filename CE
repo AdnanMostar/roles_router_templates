@@ -2,8 +2,8 @@ hostname {{item.hostname}}
 !
 ip cef
 !
-interface Loopback {{item.loopback1.}}
- ip address {{item.ip_address_loopback1.}}
+interface Loopback {{item.loopback1_no}}
+ ip address {{item.ip_address_loopback1_no}}
 !
 interface {{item.int_to_pe}}
  ip address {{item.ip_address&mask_to_pe}}
