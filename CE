@@ -2,11 +2,11 @@ hostname {{item.hostname}}
 !
 ip cef
 !
-interface Loopback {{item.loopback1.no}}
- ip address {{item.ip_address_loopback1.no}}
+interface Loopback {{item.int_loopback_number}}
+ ip address {{item.int_loopback_ip_address_mask}}
 !
 interface {{item.int_to_pe}}
- ip address {{item.ip_address&mask_to_pe}}
+ ip address {{item.int_to_pe_ip_address_mask}}
  duplex auto
  speed auto
 !
