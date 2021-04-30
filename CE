@@ -1,0 +1,18 @@
+hostname {{item.hostname}}
+!
+ip cef
+!
+interface Loopback {{item.loopback1.}}
+ ip address {{item.ip_address_loopback1.}}
+!
+interface {{item.int_to_pe}}
+ ip address {{item.ip_address&mask_to_pe}}
+ duplex auto
+ speed auto
+!
+router bgp {{item.bgp_process_no}}
+ bgp log-neighbor-changes
+ network {{item.network}} mask {{item.mask}}
+ neighbor {{item.neighbor}} remote-as {{item.remote-as}}
+!
+end
