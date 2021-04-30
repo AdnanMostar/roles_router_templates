@@ -10,7 +10,7 @@ interface {{item.int_to_pe}}
  duplex auto
  speed auto
 !
-router bgp {{item.bgp_process_no}}
+router bgp {{item.bgp_process_number}}
  bgp log-neighbor-changes
  network {{item.network}} mask {{item.mask}}
  neighbor {{item.neighbor}} remote-as {{item.remote-as}}
